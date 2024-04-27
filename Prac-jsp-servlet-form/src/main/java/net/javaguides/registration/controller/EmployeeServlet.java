@@ -12,7 +12,7 @@ import net.javaguides.registration.model.Employee;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/employeeregister")
+@WebServlet("")
 public class EmployeeServlet extends HttpServlet {
 	public static final long serialVersionUID = 1L;
 	
@@ -34,7 +34,7 @@ public class EmployeeServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/employeeregister.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("");
 		dispatcher.forward(request, response);
 	}
 
